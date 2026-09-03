@@ -1,0 +1,16 @@
+services:
+  postgres_db:
+    image: postgres:latest
+    container_name: postgresDb
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Thabete321
+      POSTGRES_DB: postgres
+      PGDATA: /data/postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - pg_volume:/var/lib/postgresql
+    restart: unless-stopped
+volumes:
+  pg_volume:
