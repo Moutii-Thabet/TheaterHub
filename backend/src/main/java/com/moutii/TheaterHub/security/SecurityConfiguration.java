@@ -21,8 +21,8 @@ import org.springframework.web.cors.CorsConfigurationSource;
 public class SecurityConfiguration {
 
     private final static String[] PUBLIC_URLS = {
-            "/auth/signup",
-            "/auth/login"
+            "/api/auth/signup",
+            "/api/auth/login"
     };
 
     private final CorsConfigurationSource corsConfigurationSource;
