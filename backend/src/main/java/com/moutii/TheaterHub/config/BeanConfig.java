@@ -2,6 +2,7 @@ package com.moutii.TheaterHub.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.domain.AuditorAware;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -22,5 +23,8 @@ public class BeanConfig {
         source.registerCorsConfiguration("/**",corsConfiguration);
         return source;
     }
+
+    @Bean
+    public AuditorAware<String> auditorAware() {return new ApplicationAuditorAware();}
 
 }
