@@ -1,11 +1,10 @@
-package com.moutii.TheaterHub.role;
+package com.moutii.TheaterHub.usermanagement.role;
 
 import com.moutii.TheaterHub.common.BaseEntity;
-import com.moutii.TheaterHub.user.User;
+import com.moutii.TheaterHub.usermanagement.user.User;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.util.List;
 

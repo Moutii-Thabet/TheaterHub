@@ -22,7 +22,7 @@ public class ErrorResponse {
     @AllArgsConstructor
     @NoArgsConstructor
     @Builder
-    public class ValidationError {
+    public static class ValidationError {
         private String code;
         private String message;
         private String fieldName;

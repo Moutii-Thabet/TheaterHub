@@ -1,4 +1,4 @@
-package com.moutii.TheaterHub.role;
+package com.moutii.TheaterHub.usermanagement.role;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

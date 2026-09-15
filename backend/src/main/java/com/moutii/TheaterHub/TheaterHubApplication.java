@@ -1,7 +1,7 @@
 package com.moutii.TheaterHub;
 
-import com.moutii.TheaterHub.role.Role;
-import com.moutii.TheaterHub.role.RoleRepo;
+import com.moutii.TheaterHub.usermanagement.role.Role;
+import com.moutii.TheaterHub.usermanagement.role.RoleRepo;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,6 +1,7 @@
-package com.moutii.TheaterHub.user;
+package com.moutii.TheaterHub.usermanagement.user;
 
-import com.moutii.TheaterHub.role.Role;
+import com.moutii.TheaterHub.reservationmanagement.Ticket;
+import com.moutii.TheaterHub.usermanagement.role.Role;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
@@ -52,6 +53,9 @@ public class User implements UserDetails {
 
     @Column(name = "DATE_OF_BIRTH", nullable = false)
     private LocalDate dateOfBirth;
+
+    @OneToMany(mappedBy = "user")
+    private List<Ticket> tickets;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = {
             CascadeType.MERGE,CascadeType.PERSIST

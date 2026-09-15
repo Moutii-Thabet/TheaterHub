@@ -1,6 +1,6 @@
 package com.moutii.TheaterHub.config;
 
-import com.moutii.TheaterHub.user.User;
+import com.moutii.TheaterHub.usermanagement.user.User;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;

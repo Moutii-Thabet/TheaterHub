@@ -1,4 +1,4 @@
-package com.moutii.TheaterHub.user;
+package com.moutii.TheaterHub.usermanagement.user;
 
 import com.moutii.TheaterHub.auth.request.RegisterRequest;
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.moutii.TheaterHub.user;
+package com.moutii.TheaterHub.usermanagement.user;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
 

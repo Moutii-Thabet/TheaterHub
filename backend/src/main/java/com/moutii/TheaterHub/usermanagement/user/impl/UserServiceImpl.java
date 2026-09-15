@@ -1,8 +1,7 @@
-package com.moutii.TheaterHub.user.impl;
+package com.moutii.TheaterHub.usermanagement.user.impl;
 
-import com.moutii.TheaterHub.user.UserRepo;
-import com.moutii.TheaterHub.user.UserService;
-import jakarta.persistence.EntityNotFoundException;
+import com.moutii.TheaterHub.usermanagement.user.UserRepo;
+import com.moutii.TheaterHub.usermanagement.user.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
