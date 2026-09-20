@@ -15,8 +15,8 @@ public enum ErrorCode {
     BAD_CREDENTIALS("BAD_CREDENTIALS","Bad credentials",HttpStatus.BAD_REQUEST),
     AUTHORIZATION_DENIED("AUTHORIZATION_DENIED","Authorization denied for this user",HttpStatus.UNAUTHORIZED),
     USER_DISABLED("USER_DISABLED", "User is disabled",HttpStatus.UNAUTHORIZED),
-    INTERNAL_EXCEPTION("INTERNAL_EXCEPTION","Internal server issues",HttpStatus.INTERNAL_SERVER_ERROR)
-    ;
+    INTERNAL_EXCEPTION("INTERNAL_EXCEPTION","Internal server issues",HttpStatus.INTERNAL_SERVER_ERROR),
+    COUNTRY_ALREADY_EXISTS("COUNTRY_ALREADY_EXISTS","Country already exists" ,HttpStatus.BAD_REQUEST );
 
 
 

@@ -40,12 +40,14 @@ public class User implements UserDetails {
     private String email;
 
     @Column(name = "IS_EMAIL_VERIFIED")
+    @Builder.Default
     private boolean isEmailVerified = false;
 
     @Column(name = "PHONE_NUMBER", nullable = false)
     private String phoneNumber;
 
     @Column(name = "IS_PHONE_VERIFIED")
+    @Builder.Default
     private boolean isPhoneVerified = false;
 
     @Column(name="PASSWORD", nullable = false)
