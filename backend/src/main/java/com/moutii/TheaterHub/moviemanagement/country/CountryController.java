@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Objects;
 
 @RestController
-@RequestMapping("/api/admin/")
+@RequestMapping("/api/admin/country")
 @RequiredArgsConstructor
 @Tag(name = "Country", description = "Country API")
 public class CountryController {
@@ -33,6 +33,7 @@ public class CountryController {
     }
 
     @GetMapping("/countries")
+    @PreAuthorize("@countrySecurityService.isAdmin()")
     public ResponseEntity<List<CountryResponse>> getCountries() {
         return ResponseEntity.ok(this.countryService.getCountries());
     }

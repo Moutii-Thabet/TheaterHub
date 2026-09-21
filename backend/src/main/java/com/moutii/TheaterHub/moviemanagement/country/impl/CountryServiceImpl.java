@@ -22,7 +22,7 @@ public class CountryServiceImpl implements CountryService {
     @Override
     @Transactional
     public void addCountry(AddCountryRequest request) {
-        if(this.countryRepository.existsByName(request.getName())) {
+        if(this.countryRepository.existsByNameIgnoreCase(request.getName())) {
             throw new BusinessException(ErrorCode.COUNTRY_ALREADY_EXISTS);
         }
         final Country country = Country.builder()
